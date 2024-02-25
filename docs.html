@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Science For Louisville / Subjects</title>
+        <!--Made by Aryan Om Goswami-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      
+         <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+      
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+          <link rel="stylesheet" href="style.css">
+          <link rel="shortcut icon" type="image/x-icon" href="sciblognob.png">
+    </head>
+    <body>
+        <nav class="navbar-inverse my_nav_bar">
+            <div class="navbar-header">
+                <button type = button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <ul class="dropdown">
+                        <li class="holder" id="onea"><a href="docs.html">Subjects</a></li>
+                        <li class="holder" id="twoa"><a href="about.html">About/Contact</a></li>
+                        <li class="holder" id="threea"><a href="faq.html">FAQ</a></li>
+                        <li class="holder" id="foura"><a href="updatelog.html">Update Log</a></li>
+                    </ul>
+                </button>
+                <a href="index.html"><img src="Untitled design (7).png" width="70" height="70"></a>
+            </div>
+            <div class="collapse navbar-collapse" id ="navbar">
+                <ul class="nav">
+                    <li><a href="docs.html" id="docsforyou">Subjects</a></li>
+                    <li><a href="about.html">About/Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="updatelog.html">Update Log</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="home">
+            <br><br><br><br>
+            <label id="vn">v1.2.3</label>
+            <br>
+            <center>
+                <h1 class="animated-text">Subjects</h1>
+                <label>Main Science Subjects You Can Explore That Contain Large Articles</label>
+                <br><br>
+                <div class="container" id="subjects">
+                    <button onclick="astronomy();"><b>Astronomy</b><br>Study of Space and Phenomena</button>
+                    <button onclick="biology();"><b>Biology</b><br>Study of Living Things and How They Grow/Work</button>
+                    <button onclick="physics();"><b>Physics</b><br>Study of Matter, Motion, Force, and Energy</button>
+                    <button onclick="chemistry();"><b>Chemistry</b><br>Study of Chemicals, and Properties of Matter</button>
+                    <button onclick="psychology();"><b>Psychology</b><br>Study of Mental Functions and Behaviours</button>
+                    <button onclick="mathematics();"><b>Mathematics</b><br>Study of Math, Quality, Structure, and Change</button>
+                    <button onclick="geology();"><b>Geology</b><br>Study of Earth, and Processes Acting On It</button>
+                </div>
+                <hr><br>
+                <h1 class="animated-text">Extra</h1>
+                <label>Extra Science Things That Are Different From Normal Subject Articles</label>
+                <br><br>
+                <button onclick="minifacts();"><b>Mini-Facts</b><br>Mini Facts About Different Subjects</button>
+                <button onclick="debate();"><b>Debate</b><br>Debating In Our Opinion On Something</button>
+                <button onclick="lessons();"><b>Lessons</b><br>Step By Step Lessons On How To Do Things</button>
+            </center>
+            <script src="main.js"></script>
+    </body>
+</html>

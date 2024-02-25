@@ -1,0 +1,321 @@
+#navbar{
+    background-color: rgb(0, 136, 136);
+    background-color: rgb(20, 39, 79) !important;
+    width: fill;
+    opacity: 100%;
+}
+a{
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 17.5;
+    margin-right: 10px;
+    font-family: serif;
+    top: 10;
+}
+ul{
+    display: flex;
+}
+li > a{
+    transition: all 0.5s;
+}
+a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+    border-radius: 5px;
+}
+body{
+    font-family: serif;
+}
+#by{
+    color: rgb(137, 139, 0);
+}
+nav{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+hr {
+    border: none;
+    height: 1px;
+    color: #333;
+    background-color: #333;
+}
+#aboutus{
+    font-weight: bold;
+}
+#docsforyou{
+    font-weight: bold;
+}
+#subjects{
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+#navimage{
+    height: 70;
+    width: 70;
+}
+#faq{
+    font-weight: bold;
+}
+h2, label, h4, h3, p{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#newnew{
+    margin-left: 25px;
+    margin-right: 500px;
+}
+.maindownload{
+    color: black !important;
+}
+#mainimage{
+    float: right;
+    margin-right: 50px;
+    width: 400px;
+    height: 500px;
+}
+#pages{
+    color: #202020;
+    font-weight: bolder;
+}
+.astrodiv{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 20px;
+}
+#vn{
+    width: 3%;
+    white-space: nowwrap;
+    overflow: hidden;
+    animation:
+        typing 3s,
+        cursor .2s step-end infinite alternate;
+}
+@keyframes cursor{
+    50%{border-color: transparent}
+}
+@keyframes typing{
+    from{width:0}
+}
+.contac{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-div{
+    margin-left: 25px;
+    margin-right: 300px;
+}
+#vn{
+    float: right;
+}
+#upbold{
+    font-weight: bold;
+}
+.uplogpar{
+    display: flex;
+    width: 100%;
+}
+  
+.uplogchild{
+    flex: 1;
+    margin: 10px;
+}
+.blackanchor{
+    color: black;
+    text-align: center;
+    display: block;
+}
+@keyframes startup{
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+
+    from{
+        
+    }
+}
+#home{
+    color: black;
+    animation-name: startup;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+}
+@keyframes shadowhover{
+    100%{
+        box-shadow: 0px 0px 10px rgb(39, 39, 39);
+    }
+}
+.astrodiv:hover{
+    animation: shadowhover .3s forwards ease-in;
+    border-radius: 15px;
+}
+.shadowhover{
+    border: 0.1px solid rgb(22, 22, 22);
+}
+@media only screen and (max-width : 414px){
+    #deleteonmobile{visibility : hidden};
+}
+button:hover{
+    transform: translateY(-10px);
+    background-color: rgb(182, 182, 182);
+}
+button{
+    width: fit-content;
+    height: 80px;
+    text-align: center;
+    margin-top: 3px;
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 7.5px;
+    padding: 0.5px, 0.5px;
+    transition-property: transform;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition: all 0.31s;
+}
+img{
+    border-radius: 5px;
+}
+.dropdown{
+    display: block;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 25px;
+    visibility: hidden;
+    perspective: 1000px;
+    margin-bottom: 0px !important;
+}
+.navbar-toggle:focus{
+    .dropdown{
+        visibility: visible;
+    }
+}
+.holder{
+    margin: 0px;
+    margin-bottom: -1px;
+    padding: 5px;
+    visibility: hidden;
+    border-radius: 3.5px;
+}
+.navbar-toggle:focus > .dropdown li:nth-child(1){
+    animation: popupa 300ms ease-in-out forwards;
+    animation-delay: 0ms;
+    background-color: rgb(20, 39, 79);
+}
+.navbar-toggle:focus > .dropdown li:nth-child(2){
+    animation: popupa 300ms ease-in-out forwards;
+    animation-delay: 250ms;
+    background-color: rgb(20, 39, 79);
+}
+.navbar-toggle:focus > .dropdown li:nth-child(3){
+    animation: popupa 300ms ease-in-out forwards;
+    animation-delay: 500ms;
+    background-color: rgb(20, 39, 79);
+}
+.navbar-toggle:focus > .dropdown li:nth-child(4){
+    animation: popupa 300ms ease-in-out forwards;
+    animation-delay: 750ms;
+    background-color: rgb(20, 39, 79);
+}
+@keyframes popupa{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+        visibility: visible;
+    }
+    50%{
+        opacity: 1;
+        visibility: visible;
+    }
+    90%{
+        transform: scale(1.1);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes yippe{
+    0%{
+        color: red;
+    }
+    20%{
+        color: cyan;
+    }
+    40%{
+        color: gold
+    }
+    60%{
+        color: lime
+    }
+    80%{
+        color: purple;
+    }
+    100%{
+        color: red
+    }
+}
+#yay{
+    animation: yippe 7s infinite;
+}
+.centeredbutton{
+    display: inline-block;
+}
+.button2main{
+    background-color: #0065a0;
+    border: none !important;
+    border-radius: 50px;
+    height: 40px;
+    font-size: 15px;
+}
+.button2main:hover{
+    color: white;
+    font-weight: normal;
+    background-color: #00446b;
+    font-size: 15px;
+}
+#numberone{
+    background-color: #09c709 !important;
+}
+#numberone:hover{
+    background-color: #068a06 !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+#footer{
+    background-color: rgb(20, 39, 79) !important;
+}
+#learningw{
+    color: white;
+}
+#amessage{
+    text-align: center;
+    color: white;
+    background: linear-gradient(0deg, rgba(23,23,23,1) 0%, rgba(105,105,105,1) 100%);
+}
